@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Launches | Galaxy SpaceX</title>
+    <meta name="description" content="At Galaxy SpaceX microsite, you can find all the Launches of SpaceX" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/Logo_GS.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/launches.css" />
+
+    <script src="https://kit.fontawesome.com/b9f483a4a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- LOADING ICON -->
+    <div id="container_loading" class="container_loading">
+        <div class="loading"></div>
+        <div class="text_loading">
+            <p>Loading</p>
+        </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div id="contentBody" style="display: none;">
+        <video autoplay muted loop id="bg_video">
+            <source src="./img/Jupiter.mp4" type="video/mp4" />
+        </video>
+
+        <!-- HEADER -->
+        <header id="header">
+            <div class="logo">
+                <a href="index.html"><i><img src="./img/logo.png" alt="logo" /></i></a>
+            </div>
+            <input type="checkbox" id="check" />
+            <label for="check" class="show_menu">
+        <i class="fas fa-bars"></i>
+      </label>
+
+            <ul class="menu">
+                <a href="index.html">Home</a>
+                <a href="launches.html" class="active">Launches</a>
+                <a href="history.html">History</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <label for="check" class="hide_menu">
+                    <i class="fas fa-times"></i>
+                    <a href="index.html"><i><img src="./img/logo.png" alt="logo"></i></a>
+                    <video autoplay muted loop class="bg_video">
+                        <source src="./img/Jupiter.mp4" type="video/mp4">
+                    </video>
+                </label>
+            </ul>
+        </header>
+
+        <!-- MAIN LAUNCHES -->
+        <main id="main_launches">
+            <h1>Space<span>X</span> Launches</h1>
+            <div class="launch_container">
+                <div class="col col1">
+                    <div class="spaceX spaceX_launch">
+                        <div class="title">
+                            <p class="flight_number">Flight no:</p>
+                            <p class="rocket_name">Rocket name:</p>
+                            <p class="launch_date">Launch date:</p>
+                            <p class="mission_name">Mission name:</p>
+                            <p class="detail">Details:</p>
+                            <p class="btn btn-link">Video links:</p>
+                        </div>
+                        <div class="all_launches">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="col_33_footer">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="col_33_footer">
+                    <img src="./img/falcon.png" alt="falcon rocket">
+                </div>
+                <div class="col_33_footer social_media">
+                    <ul>
+                        <a href="https://twitter.com/SpaceX" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com/spacex/?hl=en" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/spacex" target="_blank">Youtube</a>
+                        <a href="https://www.flickr.com/photos/spacex/" target="_blank">Flickr</a>
+                    </ul>
+                </div>
+            </div>
+            <hr class="blue_line">
+            <div class="develop_author">
+                <span>Design & Development by Florent Hajdari</span>
+                <h5 class="copy_rights">
+                    <img src="./img/logo.png" alt="logo"><span>&copy;2020 | All rights reserved.</span>
+                </h5>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/launches.js"></script>
+
+</body>
+
+</html>
