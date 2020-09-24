@@ -17,8 +17,8 @@ form.addEventListener("submit", validateForm);
 
 function validateForm(event) {
     event.preventDefault();
+    
     const nameValue = name.value;
-
 
     if (validateLength(nameValue, 1) === true) {
         nameError.style.display = "none";
