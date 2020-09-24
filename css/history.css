@@ -1,0 +1,169 @@
+/* MAIN HISTORY */
+
+#main_history h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+    padding-top: 200px;
+}
+
+#main_history h1 span {
+    color: #0071BC;
+}
+
+#main_history .spaceX {
+    max-width: 60%;
+    margin: 0 auto;
+    border: 2px solid #73BDA9;
+    background: #000;
+    padding: 10px;
+    height: 400px;
+    overflow: hidden scroll;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 0;
+}
+
+#main_history .title {
+    display: flex;
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+    background: #000;
+    padding: 5px 0;
+}
+
+#main_history .title p {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.historical_events {
+    width: 100%;
+}
+
+.spaceX_history p {
+    color: #73BDA9;
+    font-size: 12px;
+}
+
+.spaceX_history a {
+    color: #0071BC;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.spaceX_history a:hover {
+    color: #fff;
+}
+
+.historical_events .details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main_history .id {
+    width: 3%;
+    text-align: left;
+    float: left;
+    padding: 5px 10px;
+}
+
+#main_history .title_ {
+    width: 19%;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+#main_history .date {
+    width: 13%;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+#main_history .flight_number {
+    width: 10%;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+#main_history .detail {
+    width: 43%;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+#main_history .btn.btn-link {
+    width: 12%;
+    text-align: left;
+    padding: 5px 10px;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#main_history .title .btn.btn-link {
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+#main_history .spaceX::-webkit-scrollbar {
+    width: 15px;
+}
+
+#main_history .spaceX::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+#main_history .spaceX::-webkit-scrollbar-thumb {
+    background: #73BDA9;
+}
+
+#main_history .spaceX::-webkit-scrollbar-thumb:hover {
+    background: #73BDA9;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 900px) {
+    #main_history h1 {
+        font-size: 26px;
+        text-align: left;
+        margin: 0 auto 35px;
+        max-width: 85%;
+        padding-top: 150px;
+    }
+    #main_history .id,
+    #main_history .flight_number,
+    #main_history .detail {
+        display: none;
+    }
+    #main_history .spaceX {
+        max-width: 85%;
+        padding: 5px;
+        border: 1px solid #73bda9;
+        padding-top: 0;
+    }
+    #main_history .title_ {
+        width: 50%;
+        line-height: 1.1;
+    }
+    #main_history .date {
+        width: 30%;
+        line-height: 1.1;
+    }
+    #main .btn.btn-link {
+        width: 20%;
+    }
+    #main_history .spaceX::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1405px) {
+    #main_history .spaceX {
+        max-width: 85%;
+        height: 500px;
+        overflow: scroll;
+    }
+}
