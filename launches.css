@@ -1,0 +1,199 @@
+/* MAIN LAUNCHES */
+
+#main_launches {
+    margin: 0 30px;
+}
+
+#main_launches h1 {
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#main_launches h1 span {
+    color: #0071BC;
+}
+
+#main_launches .col1 {
+    position: relative;
+}
+
+#main_launches .spaceX {
+    background-color: #000;
+    border: 1px solid #73BDA9;
+    padding: 5px;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+#main_launches .spaceX .title,
+#main_launches .spaceX .details {
+    display: flex;
+}
+
+#main_launches .spaceX .title {
+    font-size: 14px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #000;
+    padding-top: 9px;
+}
+
+#main_launches .spaceX .details p {
+    font-size: 13px;
+    color: #73BDA9;
+}
+
+#main_launches .launch_date {
+    width: 54%;
+    padding-right: 10px;
+}
+
+#main_launches .rocket_name {
+    width: 42%;
+    padding-right: 10px;
+    text-align: left;
+}
+
+#main_launches .btn-link {
+    width: 33%;
+}
+
+#main_launches .details a {
+    color: #0071BC;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#main_launches .details a:hover {
+    color: #fff;
+}
+
+#main_launches .flight_number,
+#main_launches .mission_name,
+#main_launches .detail {
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1000px) {
+    #main_launches {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    #main_launches h1 {
+        margin-bottom: 70px;
+    }
+    #main_launches .launch_container {
+        display: flex;
+        justify-content: space-around;
+    }
+    #main_launches .flight_number {
+        width: 11%;
+    }
+    #main_launches .launch_date {
+        width: 20%;
+    }
+    #main_launches .mission_name {
+        width: 17%;
+        padding-right: 20px;
+    }
+    #main_launches .rocket_name {
+        width: 16%;
+        text-align: left;
+    }
+    #main_launches .detail {
+        display: block;
+        width: 40%;
+        padding-right: 20px;
+    }
+    #main_launches .btn-link {
+        width: 12%;
+    }
+    #main_launches .spaceX::-webkit-scrollbar {
+        width: 15px;
+    }
+    #main_launches .spaceX::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    #main_launches .spaceX::-webkit-scrollbar-thumb {
+        background: #73BDA9;
+    }
+    #main_launches .spaceX::-webkit-scrollbar-thumb:hover {
+        background: #73BDA9;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    #main_launches h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    #main_launches .spaceX {
+        padding: 20px;
+        padding-top: 0;
+    }
+    #main_launches .flight_number,
+    #main_launches .mission_name {
+        display: block;
+    }
+    #main_launches .flight_number {
+        width: 19%;
+    }
+    #main_launches .launch_date {
+        width: 30%;
+    }
+    #main_launches .mission_name {
+        width: 28%;
+        padding-right: 20px;
+    }
+    #main_launches .rocket_name {
+        width: 23%;
+        text-align: left;
+    }
+    #main_launches .btn-link {
+        width: 22%;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    #main_launches {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #main_launches {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    #main_launches .flight_number {
+        width: 11%;
+    }
+    #main_launches .launch_date {
+        width: 21%;
+    }
+    #main_launches .mission_name {
+        width: 16%;
+        padding-right: 20px;
+    }
+    #main_launches .rocket_name {
+        width: 16%;
+        text-align: left;
+    }
+    #main_launches .detail {
+        width: 50%;
+    }
+    #main_launches .btn-link {
+        width: 12%;
+    }
+}
