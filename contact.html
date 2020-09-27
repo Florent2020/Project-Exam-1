@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Contact | Galaxy SpaceX</title>
+    <meta name="description" content="Do you need help? Feel free and Contact Us at contact form of Galaxy SpaceX" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/Logo_GS.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/contact.css" />
+
+    <script src="https://kit.fontawesome.com/b9f483a4a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- LOADING ICON -->
+    <div id="container_loading" class="container_loading">
+        <div class="loading"></div>
+        <div class="text_loading">
+            <p>Loading</p>
+        </div>
+    </div>
+
+
+    <!-- BACKGROUND -->
+    <div id="contentBody" style="display: none;">
+        <video autoplay muted loop id="bg_video">
+            <source src="./img/Jupiter.mp4" type="video/mp4" />
+        </video>
+
+
+
+        <!-- HEADER -->
+        <header id="header">
+            <div class="logo">
+                <a href="index.html"><i><img src="./img/logo.png" alt="logo" /></i></a>
+            </div>
+            <input type="checkbox" id="check" />
+            <label for="check" class="show_menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="menu">
+                <a href="index.html">Home</a>
+                <a href="launches.html">Launches</a>
+                <a href="history.html">History</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <label for="check" class="hide_menu">
+                <i class="fas fa-times"></i>
+                <a href="index.html"><i><img src="./img/logo.png" alt="logo"></i></a>
+                <video autoplay muted loop class="bg_video">
+                    <source src="./img/Jupiter.mp4" type="video/mp4">
+                </video>
+            </label>
+            </ul>
+        </header>
+
+
+        <!-- MAIN CONTACT-->
+        <main id="main">
+            <div class="contact_title">
+                <h1>Contact Us</h1>
+                <p>If you have any questions, please feel free to contact us!</p>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input class="form-control" name="name" id="name" placeholder="Full name*" />
+                    <div class="form-error" id="nameError">
+                        Please enter your full name.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="email" id="email" placeholder="Email*" />
+                    <div class="form-error" id="emailError">
+                        Please enter your email address.
+                    </div>
+                    <div class="form-error" id="invalidEmailError">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="phone" type="tel" id="phone" placeholder="Phone*" />
+                    <div class="form-error" id="phoneError">
+                        Your number must be minimum 6 digits.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="comment" id="comment" placeholder="Comment"></textarea>
+                    <div class="form-error" id="commentError">
+                        Write your comment here.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn_submit" id="submit">Submit</button>
+            </form>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="col_33_footer">
+                    <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+                </div>
+                <div class="col_33_footer">
+                    <img src="./img/falcon.png" alt="falcon rocket" />
+                </div>
+                <div class="col_33_footer social_media">
+                    <ul>
+                        <a href="https://twitter.com/SpaceX" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com/spacex/?hl=en" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/spacex" target="_blank">Youtube</a>
+                        <a href="https://www.flickr.com/photos/spacex/" target="_blank">Flickr</a>
+                    </ul>
+                </div>
+            </div>
+            <hr class="blue_line" />
+            <div class="develop_author">
+                <span>Design & Development by Florent Hajdari</span>
+                <h5 class="copy_rights">
+                    <img src="./img/logo.png" alt="logo" /><span>&copy;2020 | All rights reserved.</span>
+                </h5>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>
